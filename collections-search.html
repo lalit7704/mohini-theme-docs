@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collections and search · MOHINI theme docs</title>
+<meta name="description" content="Collection pages, filters, sorting and search.">
+<link rel="canonical" href="https://lalit7704.github.io/mohini-theme-docs/collections-search.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">MOHINI<span>Theme docs · v1.0.0</span></a>
+  <span class="spacer"></span>
+  <a class="cta" href="support.html">Contact support</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Documentation"><h4>Start here</h4><a href="index.html">Getting started</a><a href="presets.html">Presets</a><a href="theme-settings.html">Theme settings</a><h4>Building pages</h4><a href="header-footer.html">Header and footer</a><a href="sections.html">Sections</a><a href="product-page.html">Product page</a><a href="collections-search.html" aria-current="page">Collections and search</a><a href="cart.html">Cart</a><h4>Good to know</h4><a href="animations.html">Animations and speed</a><a href="languages.html">Languages</a><a href="faq.html">FAQ</a><h4>Help</h4><a href="support.html">Support</a><a href="changelog.html">Release notes</a></nav>
+  <main><div class="content">
+
+<h1>Collections and search</h1>
+
+<h2 id="filters">Filters</h2>
+<p>Filters come from Shopify's <strong>Search & Discovery</strong> app: install it, then choose which filters to show (availability, price, product type, vendor, variant options, metafields). In the collection and search sections, turn on <strong>Enable filtering</strong> and choose the filter layout: vertical (a sidebar that can start open, or a drawer opened from the Filter button) or horizontal (a bar of dropdowns). On phones, filters always open in a drawer, and results update without reloading the page.</p>
+
+<h2 id="collection-page">Collection page</h2>
+<p>The collection template has a collection banner (title, description and image) and the product grid. Choose columns on desktop and phones, products per page, pagination (numbers, a "Load more" button or infinite scroll) and an optional menu of collections above the grid.</p>
+
+<h2 id="collections-list">Collections list page</h2>
+<p>The <strong>Collections list</strong> section shows the collections you pick, or all of them in the order you choose. Layouts: editorial (first card large), grid, carousel, hover list or circles; cards can show the text on the image, below it or in a framed card.</p>
+
+<h2 id="search">Search</h2>
+<p>Predictive search shows products, collections, pages and articles as customers type (Theme settings › Search). The search results page has tabs for result types, filters, sorting, trending and recent searches, and suggestions when nothing matches.</p>
+<div class="ref" id="collection">
+  <h3>Product grid</h3>
+  <p class="desc">The collection page grid: filters, sorting, product cards and pagination, with an optional menu of collections above it.</p>
+  <details><summary>Settings</summary><div><table><thead><tr><th>Setting</th><th>Type</th></tr></thead><tbody><tr><td>Color scheme</td><td class="setting-type">Color scheme</td></tr><tr><td>Navigation menu<span class="setting-help">Links shown above the products, like sub-collections. The collection being viewed is highlighted.</span></td><td class="setting-type">Menu</td></tr><tr><td>Show collection images</td><td class="setting-type">On / off</td></tr><tr><td>Products per page</td><td class="setting-type">Slider</td></tr><tr><td>Columns on desktop</td><td class="setting-type">Slider</td></tr><tr><td>Columns on mobile<span class="setting-help">Options: 1, 2</span></td><td class="setting-type">Choice</td></tr><tr><td>Image ratio<span class="setting-help">Options: Theme setting, Adapt to image, Square, Portrait, Landscape</span></td><td class="setting-type">Choice</td></tr><tr><td>Pagination type<span class="setting-help">Options: Page number, Load more button, Infinite scroll</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Enable filtering<span class="setting-help">Customize filters with the Shopify Search &amp; Discovery app.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Enable sorting</td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Filter layout<span class="setting-help">Options: Horizontal, Vertical</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Sort by style<span class="setting-help">Options: List, Dropdown</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Vertical filters</span>Open filters by default<span class="setting-help">When off, filters stay hidden until the Filter button opens them in a drawer.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Vertical filters</span>Size<span class="setting-help">Options: Small, Medium, Large</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Padding</span>Top padding</td><td class="setting-type">Slider</td></tr><tr><td><span class="setting-help">Padding</span>Bottom padding</td><td class="setting-type">Slider</td></tr></tbody></table></div></details>
+  
+  
+</div>
+<div class="ref" id="search">
+  <h3>Search</h3>
+  <p class="desc">Search results page: a large search field with live results, tabs for result types, filters and sorting, a grid of products, articles and pages, and pagination. Before a search, and when nothing is found, it shows recent and popular searches, popular collections and suggested products. Filtering, sorting, &quot;Load more&quot; and infinite scroll use the same &lt;collection-filters&gt; element as the collection page (snippets/collection-filters.liquid), and the same toolbar, drawer and grid styles (sections/collection.liquid). Results refresh in place through the Section Rendering API; without JavaScript every form and link still works as a normal page load.</p>
+  <details><summary>Settings</summary><div><table><thead><tr><th>Setting</th><th>Type</th></tr></thead><tbody><tr><td>Color scheme</td><td class="setting-type">Color scheme</td></tr><tr><td><span class="setting-help">Search field</span>Heading<span class="setting-help">Shown before a search. After a search, the search terms show instead.</span></td><td class="setting-type">Text</td></tr><tr><td><span class="setting-help">Search field</span>Subheading</td><td class="setting-type">Text</td></tr><tr><td><span class="setting-help">Search field</span>Placeholder texts<span class="setting-help">Separate with commas. The search field types them out one after another.</span></td><td class="setting-type">Text</td></tr><tr><td><span class="setting-help">Search field</span>Trending searches<span class="setting-help">Separate with commas. They show under the search field as shortcuts.</span></td><td class="setting-type">Text</td></tr><tr><td><span class="setting-help">Search field</span>Show recent searches<span class="setting-help">Remembered in each customer's own browser.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Results</span>Show tabs for products, articles and pages</td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Results</span>Results per page</td><td class="setting-type">Slider</td></tr><tr><td><span class="setting-help">Results</span>Columns on desktop</td><td class="setting-type">Slider</td></tr><tr><td><span class="setting-help">Results</span>Columns on mobile<span class="setting-help">Options: 1, 2</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Results</span>Let customers change results per row<span class="setting-help">Their choice is remembered in their browser.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Results</span>Image ratio<span class="setting-help">Options: Theme setting, Adapt to image, Square, Portrait, Landscape</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Results</span>Pagination type<span class="setting-help">Options: Page number, Load more button, Infinite scroll</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Results</span>Show article images</td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Results</span>Show excerpts for articles and pages</td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Results</span>Highlight search terms<span class="setting-help">In the titles and excerpts of articles and pages.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Enable filtering<span class="setting-help">Filters are set up in the Search &amp; Discovery app and apply to products.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Enable sorting</td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Filter layout<span class="setting-help">Options: Horizontal, Vertical</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Sort by style<span class="setting-help">Options: List, Dropdown</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Open filters by default<span class="setting-help">When off, filters stay hidden until the Filter button opens them in a drawer.</span></td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Filtering and sorting</span>Size<span class="setting-help">Options: Small, Medium, Large</span></td><td class="setting-type">Choice</td></tr><tr><td><span class="setting-help">Suggestions</span>Show search tips</td><td class="setting-type">On / off</td></tr><tr><td><span class="setting-help">Suggestions</span>Collections heading</td><td class="setting-type">Text</td></tr><tr><td><span class="setting-help">Suggestions</span>Collections</td><td class="setting-type">Collections</td></tr><tr><td><span class="setting-help">Suggestions</span>Products heading</td><td class="setting-type">Text</td></tr><tr><td><span class="setting-help">Suggestions</span>Collection</td><td class="setting-type">Collection</td></tr><tr><td><span class="setting-help">Suggestions</span>Products to show</td><td class="setting-type">Slider</td></tr><tr><td><span class="setting-help">Padding</span>Top padding</td><td class="setting-type">Slider</td></tr><tr><td><span class="setting-help">Padding</span>Bottom padding</td><td class="setting-type">Slider</td></tr></tbody></table></div></details>
+  
+  
+</div>
+
+  <footer class="site">MOHINI Themes · Theme version 1.0.0 · <a href="support.html">Support</a> · <a href="mailto:lalit979932@gmail.com">lalit979932@gmail.com</a></footer>
+  </div></main>
+</div>
+<script>
+  (function () {
+    var button = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    button.addEventListener('click', function () {
+      var open = sidebar.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+  })();
+</script>
+</body>
+</html>

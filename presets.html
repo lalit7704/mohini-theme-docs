@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presets · MOHINI theme docs</title>
+<meta name="description" content="MOHINI, Dark and Soft presets.">
+<link rel="canonical" href="https://lalit7704.github.io/mohini-theme-docs/presets.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">MOHINI<span>Theme docs · v1.0.0</span></a>
+  <span class="spacer"></span>
+  <a class="cta" href="support.html">Contact support</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Documentation"><h4>Start here</h4><a href="index.html">Getting started</a><a href="presets.html" aria-current="page">Presets</a><a href="theme-settings.html">Theme settings</a><h4>Building pages</h4><a href="header-footer.html">Header and footer</a><a href="sections.html">Sections</a><a href="product-page.html">Product page</a><a href="collections-search.html">Collections and search</a><a href="cart.html">Cart</a><h4>Good to know</h4><a href="animations.html">Animations and speed</a><a href="languages.html">Languages</a><a href="faq.html">FAQ</a><h4>Help</h4><a href="support.html">Support</a><a href="changelog.html">Release notes</a></nav>
+  <main><div class="content">
+
+<h1>Presets</h1>
+<p class="lead">A preset is a starting point: a set of colors, fonts, header and footer styles and home page sections. All presets share the same features.</p>
+
+<table>
+  <thead><tr><th>Preset</th><th>Made for</th><th>Header and footer</th><th>Fonts</th></tr></thead>
+  <tbody>
+    <tr><td><strong>MOHINI</strong></td><td>Fashion and clothing</td><td>Clothing style</td><td>Work Sans</td></tr>
+    <tr><td><strong>Dark</strong></td><td>Electronics and tech</td><td>Electronics style</td><td>Space Grotesk, Inter</td></tr>
+    <tr><td><strong>Soft</strong></td><td>Beauty and skincare</td><td>Beauty style</td><td>Cormorant, Jost</td></tr>
+  </tbody>
+</table>
+
+<h2>Switching presets</h2>
+<p>Presets are chosen when you add the theme. To try another one, add MOHINI again from the Theme Store with the other preset; your current copy stays in the theme library.</p>
+<div class="note"><p>You can get any preset's look by hand too: the header and footer each have ten styles (Header › Style and Footer › Style), and colors and fonts are in Theme settings.</p></div>
+
+  <footer class="site">MOHINI Themes · Theme version 1.0.0 · <a href="support.html">Support</a> · <a href="mailto:lalit979932@gmail.com">lalit979932@gmail.com</a></footer>
+  </div></main>
+</div>
+<script>
+  (function () {
+    var button = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    button.addEventListener('click', function () {
+      var open = sidebar.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+  })();
+</script>
+</body>
+</html>

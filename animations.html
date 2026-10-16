@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Animations and speed · MOHINI theme docs</title>
+<meta name="description" content="How MOHINI animates and stays fast.">
+<link rel="canonical" href="https://lalit7704.github.io/mohini-theme-docs/animations.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">MOHINI<span>Theme docs · v1.0.0</span></a>
+  <span class="spacer"></span>
+  <a class="cta" href="support.html">Contact support</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Documentation"><h4>Start here</h4><a href="index.html">Getting started</a><a href="presets.html">Presets</a><a href="theme-settings.html">Theme settings</a><h4>Building pages</h4><a href="header-footer.html">Header and footer</a><a href="sections.html">Sections</a><a href="product-page.html">Product page</a><a href="collections-search.html">Collections and search</a><a href="cart.html">Cart</a><h4>Good to know</h4><a href="animations.html" aria-current="page">Animations and speed</a><a href="languages.html">Languages</a><a href="faq.html">FAQ</a><h4>Help</h4><a href="support.html">Support</a><a href="changelog.html">Release notes</a></nav>
+  <main><div class="content">
+
+<h1>Animations and speed</h1>
+<p class="lead">MOHINI animates with GSAP: content reveals as it scrolls into view, product cards react on hover, products fly to the cart, and some sections are driven by scrolling.</p>
+
+<h2 id="settings">Animation settings</h2>
+<p>Theme settings › Animations:</p>
+<ul>
+  <li><strong>Enable animations</strong> turns all of them on or off.</li>
+  <li><strong>Reveal content on load and scroll</strong>: headings, text and cards fade or slide in as they come into view.</li>
+  <li><strong>Product card hover effect</strong>: images zoom and quick actions slide in on hover.</li>
+  <li><strong>Fly product image to the cart on add</strong>.</li>
+  <li><strong>Animation speed</strong>: slow, normal or fast.</li>
+</ul>
+
+<h2 id="speed">Built for speed</h2>
+<ul>
+  <li>The animation scripts load on the visitor's first scroll, tap, key press or mouse movement, not with the page, so the first screen appears without waiting for them. What's already on screen stays as it is; everything below animates in as the visitor scrolls.</li>
+  <li>Each section loads only its own styles, and only on pages that use it.</li>
+  <li>Images load at the size each device needs, and images below the first screen load as the visitor scrolls.</li>
+  <li>The hero slider's transitions and autoplay start once the visitor interacts, so the first slide is what loads first.</li>
+</ul>
+
+<h2 id="scroll-sections">Scroll-driven sections</h2>
+<p><strong>Zoom reveal</strong>, <strong>Runway</strong> and <strong>Showcase</strong> pin to the screen while the customer scrolls. They need animations on; with animations off, they show as regular layouts that work with swiping. Each one adds a few screens of scrolling, so use them where you want to slow visitors down, like a new collection.</p>
+
+<h2 id="reduced-motion">Reduced motion</h2>
+<p>Customers who turn on "reduce motion" on their device don't see animations: content simply shows, and scroll-driven sections use their static layouts.</p>
+
+<h2 id="tips">Tips for a fast store</h2>
+<ul>
+  <li>Upload images no larger than about 2500 px on the long side, compressed (JPG or WebP).</li>
+  <li>Keep apps you don't use uninstalled: many add scripts to every page.</li>
+  <li>Use one hero (slider or banner) at the top of the home page, and not more than one or two scroll-driven sections per page.</li>
+</ul>
+
+  <footer class="site">MOHINI Themes · Theme version 1.0.0 · <a href="support.html">Support</a> · <a href="mailto:lalit979932@gmail.com">lalit979932@gmail.com</a></footer>
+  </div></main>
+</div>
+<script>
+  (function () {
+    var button = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    button.addEventListener('click', function () {
+      var open = sidebar.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FAQ · MOHINI theme docs</title>
+<meta name="description" content="Frequently asked questions about MOHINI.">
+<link rel="canonical" href="https://lalit7704.github.io/mohini-theme-docs/faq.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">MOHINI<span>Theme docs · v1.0.0</span></a>
+  <span class="spacer"></span>
+  <a class="cta" href="support.html">Contact support</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Documentation"><h4>Start here</h4><a href="index.html">Getting started</a><a href="presets.html">Presets</a><a href="theme-settings.html">Theme settings</a><h4>Building pages</h4><a href="header-footer.html">Header and footer</a><a href="sections.html">Sections</a><a href="product-page.html">Product page</a><a href="collections-search.html">Collections and search</a><a href="cart.html">Cart</a><h4>Good to know</h4><a href="animations.html">Animations and speed</a><a href="languages.html">Languages</a><a href="faq.html" aria-current="page">FAQ</a><h4>Help</h4><a href="support.html">Support</a><a href="changelog.html">Release notes</a></nav>
+  <main><div class="content">
+
+<h1>Frequently asked questions</h1>
+<div class="faq">
+<details><summary>How do I change the look without changing presets?</summary><div><p>Theme settings › Colors and Typography set colors and fonts, and Header › Style and Footer › Style each offer ten styles. Between them you can match any preset.</p></div></details>
+<details><summary>How do I make a mega menu?</summary><div><p>Set Header › Menu type to "Mega menu" and give a top-level menu link child links (and grandchild links for columns). To add promo images, add a "Mega menu promo" block and type the link's title in "Menu item". See <a href="header-footer.html#mega-menu">Mega menus and promos</a>.</p></div></details>
+<details><summary>Can a mega menu show more than two promos?</summary><div><p>Yes: add another Mega menu promo block with the same menu item. Promos from every matching block show in a row.</p></div></details>
+<details><summary>Why don't animations play right when the page opens?</summary><div><p>To keep pages fast, the animation scripts load on the visitor's first scroll, tap or mouse movement. Whatever is on screen at that point stays as it is, and everything below animates in as they scroll. If nothing animates at all, check Theme settings › Animations and whether your device has "reduce motion" turned on.</p></div></details>
+<details><summary>How do I add a size chart or care instructions?</summary><div><p>Write the content as a page in Shopify admin › Online Store › Pages, then add a "Collapsible tab" or "Tabs" block to the product page and choose that page.</p></div></details>
+<details><summary>How do I show a countdown for a sale?</summary><div><p>Add a "Countdown timer" block to the product page, or a countdown to an Announcement block in the header, and set the end date and time.</p></div></details>
+<details><summary>Where do filters come from?</summary><div><p>From Shopify's free Search & Discovery app. Install it, choose your filters there, then turn on "Enable filtering" in the collection and search sections.</p></div></details>
+<details><summary>How do I offer gift wrapping?</summary><div><p>Create a gift wrap product and choose it in Theme settings › Cart › Gift wrap product. See <a href="cart.html#gift-wrap">Gift wrap</a>.</p></div></details>
+<details><summary>My banner image is cropped badly on phones. What can I do?</summary><div><p>Set a focal point on the image (image picker › Edit), or add a separate mobile image where the section offers one.</p></div></details>
+<details><summary>How do I use Zoom reveal and Runway?</summary><div><p>Add them from Add section on the home page. Zoom reveal cuts a word out of the section's color to show your image through its letters; Runway pairs model images with products. Both need animations on. See <a href="sections.html#zoom-reveal">Zoom reveal</a> and <a href="sections.html#runway">Runway</a>.</p></div></details>
+<details><summary>Can I edit the theme's code?</summary><div><p>Yes, but duplicate the theme first and edit the copy. Edited code can't receive theme updates automatically, and support doesn't cover changes to the code.</p></div></details>
+<details><summary>How do I update MOHINI?</summary><div><p>When an update is out, Shopify shows it in Online Store › Themes. Adding the update creates a new copy with your settings and content carried over; review it and publish it. Changes you made to the code aren't carried over.</p></div></details>
+<details><summary>Does MOHINI work with apps?</summary><div><p>Yes. Sections and the product page accept app blocks, and apps that add their own sections or embeds work as usual. We can't support the apps themselves; contact the app's developer for help with an app.</p></div></details>
+</div>
+<p>Didn't find your answer? <a href="support.html">Contact support</a>.</p>
+
+  <footer class="site">MOHINI Themes · Theme version 1.0.0 · <a href="support.html">Support</a> · <a href="mailto:lalit979932@gmail.com">lalit979932@gmail.com</a></footer>
+  </div></main>
+</div>
+<script>
+  (function () {
+    var button = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    button.addEventListener('click', function () {
+      var open = sidebar.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+  })();
+</script>
+</body>
+</html>

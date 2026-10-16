@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Getting started · MOHINI theme docs</title>
+<meta name="description" content="Install MOHINI, pick a preset and set up your store.">
+<link rel="canonical" href="https://lalit7704.github.io/mohini-theme-docs/">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">MOHINI<span>Theme docs · v1.0.0</span></a>
+  <span class="spacer"></span>
+  <a class="cta" href="support.html">Contact support</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Documentation"><h4>Start here</h4><a href="index.html" aria-current="page">Getting started</a><a href="presets.html">Presets</a><a href="theme-settings.html">Theme settings</a><h4>Building pages</h4><a href="header-footer.html">Header and footer</a><a href="sections.html">Sections</a><a href="product-page.html">Product page</a><a href="collections-search.html">Collections and search</a><a href="cart.html">Cart</a><h4>Good to know</h4><a href="animations.html">Animations and speed</a><a href="languages.html">Languages</a><a href="faq.html">FAQ</a><h4>Help</h4><a href="support.html">Support</a><a href="changelog.html">Release notes</a></nav>
+  <main><div class="content">
+
+<h1>MOHINI theme documentation</h1>
+<p class="lead">MOHINI is a Shopify theme for fashion, tech and beauty brands, with ten header and footer styles, scroll-driven sections and fast product pages. This guide covers setup, every setting and section, and how to get help.</p>
+
+<div class="warning">
+  <p><strong>Before you edit the theme's code, duplicate the theme.</strong> In Shopify admin, go to <strong>Online Store › Themes</strong>, open the <strong>…</strong> menu next to MOHINI and choose <strong>Duplicate</strong>. Work on the copy. Theme updates can't carry over changes made to the code, and support doesn't cover edited code.</p>
+</div>
+
+<div class="cards">
+  <a class="card" href="presets.html"><strong>Presets</strong><span>Three ready-made looks: MOHINI, Dark and Soft.</span></a>
+  <a class="card" href="theme-settings.html"><strong>Theme settings</strong><span>Colors, fonts, layout, animations and more.</span></a>
+  <a class="card" href="sections.html"><strong>Sections</strong><span>Every section, its settings and blocks.</span></a>
+  <a class="card" href="faq.html"><strong>FAQ</strong><span>Quick answers to common questions.</span></a>
+</div>
+
+<h2 id="install">Install the theme</h2>
+<ol class="steps">
+  <li>In the Shopify Theme Store, open MOHINI and choose <strong>Try theme</strong> (or buy it). It's added to your theme library without replacing your current theme.</li>
+  <li>Pick the preset closest to your brand. You can change every color, font and section later.</li>
+  <li>Open <strong>Customize</strong> to edit it in the theme editor. Your live store doesn't change until you publish.</li>
+  <li>When you're happy, choose <strong>Publish</strong>.</li>
+</ol>
+
+<h2 id="checklist">Setup checklist</h2>
+<ol class="steps">
+  <li><strong>Logo and favicon.</strong> Header › Logo, and Theme settings › Favicon.</li>
+  <li><strong>Colors and fonts.</strong> Theme settings › Colors (color schemes) and Typography. See <a href="theme-settings.html">Theme settings</a>.</li>
+  <li><strong>Menus.</strong> Build your main and footer menus in <strong>Online Store › Navigation</strong>, then pick them in the header and footer. For mega menus, see <a href="header-footer.html#mega-menu">Mega menus</a>.</li>
+  <li><strong>Home page.</strong> Add, remove and reorder sections. Replace every placeholder image and text with your own.</li>
+  <li><strong>Product page.</strong> Arrange the product blocks (price, variant picker, buy buttons, tabs…). See <a href="product-page.html">Product page</a>.</li>
+  <li><strong>Collections, search and cart.</strong> Turn on filters in Search & Discovery, and choose a cart type. See <a href="collections-search.html">Collections and search</a> and <a href="cart.html">Cart</a>.</li>
+  <li><strong>Check on a phone.</strong> Use the device toggle at the top of the theme editor.</li>
+</ol>
+
+<h2 id="images">Images</h2>
+<ul>
+  <li>Use large, sharp images: 2400 px wide for full-width banners, 1600 px for half-width images, 1200 px for product photos. Shopify serves the right size to each device.</li>
+  <li>Set a <strong>focal point</strong> on an image (in the image picker, choose <strong>Edit</strong>) so the important part stays in view when the image is cropped, especially on phones.</li>
+  <li>Many banners have a separate <strong>Mobile image</strong> setting for a portrait version.</li>
+  <li>Add alt text to images in Shopify admin so screen readers can describe them.</li>
+</ul>
+
+<h2 id="help">Getting help</h2>
+<p>Most answers are in this guide and the <a href="faq.html">FAQ</a>. If you're stuck, <a href="support.html">contact support</a>: we reply within 2 business days.</p>
+
+  <footer class="site">MOHINI Themes · Theme version 1.0.0 · <a href="support.html">Support</a> · <a href="mailto:lalit979932@gmail.com">lalit979932@gmail.com</a></footer>
+  </div></main>
+</div>
+<script>
+  (function () {
+    var button = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    button.addEventListener('click', function () {
+      var open = sidebar.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+  })();
+</script>
+</body>
+</html>

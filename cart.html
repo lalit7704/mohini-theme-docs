@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cart · MOHINI theme docs</title>
+<meta name="description" content="Cart drawer, cart page, gift wrap and free shipping bar.">
+<link rel="canonical" href="https://lalit7704.github.io/mohini-theme-docs/cart.html">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="index.html">MOHINI<span>Theme docs · v1.0.0</span></a>
+  <span class="spacer"></span>
+  <a class="cta" href="support.html">Contact support</a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="sidebar">Menu</button>
+</header>
+<div class="layout">
+  <nav class="sidebar" id="sidebar" aria-label="Documentation"><h4>Start here</h4><a href="index.html">Getting started</a><a href="presets.html">Presets</a><a href="theme-settings.html">Theme settings</a><h4>Building pages</h4><a href="header-footer.html">Header and footer</a><a href="sections.html">Sections</a><a href="product-page.html">Product page</a><a href="collections-search.html">Collections and search</a><a href="cart.html" aria-current="page">Cart</a><h4>Good to know</h4><a href="animations.html">Animations and speed</a><a href="languages.html">Languages</a><a href="faq.html">FAQ</a><h4>Help</h4><a href="support.html">Support</a><a href="changelog.html">Release notes</a></nav>
+  <main><div class="content">
+
+<h1>Cart</h1>
+<p class="lead">Choose how the cart opens in Theme settings › Cart › Cart type.</p>
+<table>
+  <thead><tr><th>Cart type</th><th>What happens on "Add to cart"</th></tr></thead>
+  <tbody>
+    <tr><td>Drawer</td><td>The cart slides in from the side, with line items, the free shipping bar and checkout.</td></tr>
+    <tr><td>Page</td><td>Customers go to the cart page.</td></tr>
+    <tr><td>Popup notification</td><td>A small confirmation appears with links to the cart and checkout.</td></tr>
+  </tbody>
+</table>
+
+<h2 id="free-shipping">Free shipping bar</h2>
+<p>Turn on <strong>Show free shipping bar</strong> and set <strong>Free shipping minimum</strong> in your store's currency. The bar shows how much more customers need to spend, then tells them when they've unlocked free shipping. Set up the matching free shipping rate in Shopify admin › Settings › Shipping.</p>
+
+<h2 id="gift-wrap">Gift wrap</h2>
+<p>Create a product for gift wrapping (for example "Gift wrap", with its price), then choose it in <strong>Gift wrap product</strong>. Customers can add it from the cart with one click, and leave a gift message if <strong>Let customers add a gift message</strong> is on.</p>
+
+<h2 id="notes">Order notes and checkout buttons</h2>
+<p><strong>Enable order notes</strong> adds a note field to the cart. Accelerated checkout buttons (Shop Pay, Apple Pay, Google Pay…) appear on the cart page when they're turned on in Shopify admin › Settings › Payments.</p>
+
+  <footer class="site">MOHINI Themes · Theme version 1.0.0 · <a href="support.html">Support</a> · <a href="mailto:lalit979932@gmail.com">lalit979932@gmail.com</a></footer>
+  </div></main>
+</div>
+<script>
+  (function () {
+    var button = document.querySelector('.menu-toggle');
+    var sidebar = document.getElementById('sidebar');
+    button.addEventListener('click', function () {
+      var open = sidebar.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', String(open));
+    });
+  })();
+</script>
+</body>
+</html>
