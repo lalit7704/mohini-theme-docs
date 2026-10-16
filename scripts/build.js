@@ -152,7 +152,7 @@ function page(file, title, description, body) {
   <nav class="sidebar" id="sidebar" aria-label="Documentation">${nav}</nav>
   <main><div class="content">
 ${body}
-  <footer class="site">MOHINI Themes · Theme version ${VERSION} · <a href="support.html">Support</a> · <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a></footer>
+  <footer class="site">MOHINI theme by Jack · Version ${VERSION} · <a href="support.html">Support</a> · <a href="mailto:${SUPPORT_EMAIL}">${SUPPORT_EMAIL}</a></footer>
   </div></main>
 </div>
 <script>
@@ -467,7 +467,7 @@ pages['support.html'] = page('support.html', 'Support', 'How to get help with MO
   <input type="hidden" name="_subject" value="MOHINI theme support request">
   <input type="hidden" name="_template" value="table">
   <input type="hidden" name="_next" value="${SITE_URL}thanks.html">
-  <input type="hidden" name="_autoresponse" value="Thanks for contacting MOHINI Themes support. We've received your request and will reply within 2 business days (Monday to Friday). If you have more details or screenshots, reply to this email. — MOHINI Themes">
+  <input type="hidden" name="_autoresponse" value="Thanks for contacting MOHINI theme support. We've received your request and will reply within 2 business days (Monday to Friday). If you have more details or screenshots, reply to this email. — MOHINI Themes">
   <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
   <label>Your name
     <input type="text" name="name" required autocomplete="name">
