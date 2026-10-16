@@ -183,7 +183,7 @@ pages['index.html'] = page('index.html', 'Getting started', 'Install MOHINI, pic
 </div>
 
 <div class="cards">
-  <a class="card" href="presets.html"><strong>Presets</strong><span>Three ready-made looks: MOHINI, Dark and Soft.</span></a>
+  <a class="card" href="presets.html"><strong>Presets</strong><span>Three ready-made looks: MOHINI, Dark and Lotus.</span></a>
   <a class="card" href="theme-settings.html"><strong>Theme settings</strong><span>Colors, fonts, layout, animations and more.</span></a>
   <a class="card" href="sections.html"><strong>Sections</strong><span>Every section, its settings and blocks.</span></a>
   <a class="card" href="faq.html"><strong>FAQ</strong><span>Quick answers to common questions.</span></a>
@@ -222,7 +222,7 @@ pages['index.html'] = page('index.html', 'Getting started', 'Install MOHINI, pic
 
 /* ---------- Presets ---------- */
 
-pages['presets.html'] = page('presets.html', 'Presets', 'MOHINI, Dark and Soft presets.', `
+pages['presets.html'] = page('presets.html', 'Presets', 'MOHINI, Dark and Lotus presets.', `
 <h1>Presets</h1>
 <p class="lead">A preset is a starting point: a set of colors, fonts, header and footer styles and home page sections. All presets share the same features.</p>
 
@@ -231,7 +231,7 @@ pages['presets.html'] = page('presets.html', 'Presets', 'MOHINI, Dark and Soft p
   <tbody>
     <tr><td><strong>MOHINI</strong></td><td>Fashion and clothing</td><td>Clothing style</td><td>Work Sans</td></tr>
     <tr><td><strong>Dark</strong></td><td>Electronics and tech</td><td>Electronics style</td><td>Space Grotesk, Inter</td></tr>
-    <tr><td><strong>Soft</strong></td><td>Beauty and skincare</td><td>Beauty style</td><td>Cormorant, Jost</td></tr>
+    <tr><td><strong>Lotus</strong></td><td>Beauty and skincare</td><td>Beauty style</td><td>Cormorant, Jost</td></tr>
   </tbody>
 </table>
 
@@ -532,7 +532,7 @@ pages['changelog.html'] = page('changelog.html', 'Release notes', 'What\'s new i
 <h2 id="v1-0-0">Version ${VERSION}</h2>
 <p>First release.</p>
 <ul>
-  <li>Three presets: MOHINI (fashion), Dark (tech) and Soft (beauty).</li>
+  <li>Three presets: MOHINI (fashion), Dark (tech) and Lotus (beauty).</li>
   <li>Ten header styles and ten footer styles, mega menus with any number of promos (text below or on the image), menu labels, an announcement bar with countdowns, and a sticky or transparent header.</li>
   <li>${Object.values(sections).filter((s) => s.schema.presets?.length).length} sections you can add, including Hero slider with WebGL transitions, Zoom reveal, Runway, Showcase, Shop the look, Lookbook, Before / after, Timeline, Stats and Comparison.</li>
   <li>Product page with ${productBlocks.length} blocks, including pickup availability, complementary products, countdown, delivery estimate, tabs and highlights; image zoom, video and 3D models; quick view and quick add.</li>
